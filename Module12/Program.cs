@@ -2,17 +2,19 @@
 {
     internal class Program
     {
-        //task 12.1.3
+        //task 12.1.4
         static void Main(string[] args)
         {
-            Console.WriteLine("Сколько элементов будет в массиве?");
-            int count = int.Parse(Console.ReadLine());
-            string[] array = new string[count];
-            for (int  i = 0; i < count;i++)
+            Console.WriteLine("Введите свой возраст");
+            int age = int.Parse(Console.ReadLine());
+            if (age > 13)
             {
-                array[i] = Console.ReadLine();
+                Console.WriteLine("Вы успешно зарегестрированы");
             }
-            Console.WriteLine("Все элементы записаны");
+            else
+            {
+                Console.WriteLine("Пользователи младше 14 лет не могут быть зарегестрированы");
+            }
         }
     }
 }
